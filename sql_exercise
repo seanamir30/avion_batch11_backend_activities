@@ -1,0 +1,33 @@
+create table students (
+ id integer primary key,
+ name character varying(50),
+ course character varying(50),
+ age numeric);
+
+
+insert into students (id, name, course,age)
+values(1, 'Sean', 'BSIT', 20);
+insert into students (id, name, course,age)
+values(2, 'John', 'BSCS', 21);
+insert into students (id, name, course,age)
+values(3, 'Angel', 'BSA', 19);
+insert into students (id, name, course,age)
+values(4, 'Mika', 'BSMM', 22);
+insert into students (id, name, course,age)
+values(5, 'Fred', 'BSIT', 17
+
+select * from students order by age desc;
+
+select AVG(age) from students ;
+  
+select SUM(age) from students ;
+
+select * from students where age >= 25 and age <= 32;
+
+update students set course = 'Millenialogy' where age >25 and age <=32;
+
+delete from students where age > 30;
+
+select name from students
+
+select name, course  from students where age < 20;
